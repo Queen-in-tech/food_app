@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6e00191afa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="">
+      <header class="p-8 mx-10 flex justify-between">
+        <a href="#"><div class="text-2xl text-orange-600 font-bold logo">FOOD</div></a>
+        <nav class="text-m font-medium hidden md:block">
+          <a href="#" class="mr-5 hover:text-orange-600">Recipies</a>
+          <a href="#" class="mr-5 hover:text-orange-600">Learn/How-to</a>
+          <a href="#" class="mr-5 hover:text-orange-600">Seasonal Sensations</a>
+          <a href="#" class="mr-5 hover:text-orange-600">Shop</a>
+        </nav>
+        <button
+          class="bg-sky-900 text-gray-100 px-5 py-2 rounded-3xl hidden md:block hover:bg-sky-600"
+        >
+          Subscribe
+        </button>
+        <i class="fa-solid fa-bars text-4xl text-stone-800 md:hidden" id="nav-bar"></i>
+      </header>
+
+      <section
+        class="nav pt-10 h-full fixed hidden md:hidden top-0 p-5 w-80 bg-stone-800 text-center" id="navigations"
+      >
+        <a href="#"><p class="text-2xl font-bold text-orange-600 mt-4 mb-10 logo">FOOD</p></a>
+        <i
+          class="fa-solid fa-xmark absolute top-3 left-6 text-gray-400 text-4xl"
+        id="close-nav"></i>
+        <div class="links">
+          <ul class="text-xl text-white text-center mb-20">
+            <li class="mb-6">
+              <a href="#" class="hover:text-orange-600">Recipies</a>
+            </li>
+            <li class="mb-6">
+              <a href="#" class="hover:text-orange-600">Learn/How-to</a>
+            </li>
+            <li class="mb-6">
+              <a href="#" class="hover:text-orange-600">Seasonal Sensations</a>
+            </li>
+            <li class="mb-6">
+              <a href="#" class="hover:text-orange-600">Shop</a>
+            </li>
+          </ul>
+        </div>
+        <p class="text-lg text-white">Follow Us!</p>
+        <div class="text-3xl text-orange-600 mt-2 mb-7">
+          <i class="fa-brands fa-facebook mr-2"></i>
+          <i class="fa-brands fa-twitter mr-2"></i>
+          <i class="fa-brands fa-instagram mr-2"></i>
+        </div>
+        <button
+          class="border-2 border-gray-400 rounded-xl text-xl py-1 text-gray-400 px-10 hover:text-orange-600"
+        >
+          Sign In
+        </button>
+      </section>
+
+      <section class="bg-gray-100">
+        <section class="mb-10">
+          <div
+            class="w-full h-80 bg-cover bg-center flex justify-center items-center"
+            style="background-image: url('../backdrop2.jpg'); object-fit: cover"
+          >
+            <div
+              class="h-3/4 w-3/4 md:w-1/2 rounded-3xl border-2 border-gray-200 p-5"
+            >
+              <div
+                class="text-white text-center flex flex-col justify-center items-center"
+              >
+                <p class="mt-10 mb-4 text-3xl font-bold">Find a Recipe</p>
+                <div class="flex justify-between bg-white rounded-r-xl">
+                  <input
+                    class="text-black text-m mx-2 w-72 px-3 focus:outline-none"
+                    type="text"
+                    id="search-input"
+                    placeholder="Enter an ingredient"
+                  />
+                  <button >
+                    <i
+                      class="fa-sharp fa-solid fa-magnifying-glass rounded-r-xl px-2 bg-orange-600  text-white text-3xl" id="search-btn"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-5" id="category">
+          <div
+            class="text-2xl font-bold text-center"
+            style="font-family: Verdana, Geneva, Tahoma, sans-serif"
+          >
+            Search By <span class="text-orange-600">Category</span>
+          </div>
+          <section
+            class="grid grid-cols-3 grid-rows-2 justify-center items-center text-center lg:flex lg:gap-14" id="category-list"
+          >
+            <div
+              class="p-5 flex flex-col justify-center items-center hover:text-orange-600"
+            >
+              <img
+                src="../appertizer.jpg"
+                alt="Appertizers"
+                class="h-20 w-20 object-cover rounded-full"
+              />
+              <p class="text-sm font-bold">Appertizers</p>
+            </div>
+
+            <div
+              class="p-5 flex flex-col justify-center items-center hover:text-orange-600"
+            >
+              <img
+                src="../bread.jpg"
+                alt="Appertizers"
+                class="h-20 w-20 object-cover rounded-full"
+              />
+              <p class="text-sm font-bold">Bread</p>
+            </div>
+
+            <div
+              class="p-5 flex flex-col justify-center items-center hover:text-orange-600"
+            >
+              <img
+                src="../breakfast.jpg"
+                alt="Appertizers"
+                class="h-20 w-20 object-cover rounded-full"
+              />
+              <p class="text-sm font-bold">Breakfasts</p>
+            </div>
+
+            <div
+              class="p-5 flex flex-col justify-center items-center hover:text-orange-600"
+            >
+              <img
+                src="../pizza.jpg"
+                alt="Appertizers"
+                class="h-20 w-20 object-cover rounded-full"
+              />
+              <p class="text-sm font-bold">Cheeze Pizza</p>
+            </div>
+
+            <div
+              class="p-5 flex flex-col justify-center items-center hover:text-orange-600"
+            >
+              <img
+                src="../desserts.jpg"
+                alt="Appertizers"
+                class="h-20 w-20 object-cover rounded-full"
+              />
+              <p class="text-sm font-bold">Dessert</p>
+            </div>
+
+            <div
+              class="p-5 flex flex-col justify-center items-center hover:text-orange-600"
+            >
+              <img
+                src="../soup.jpg"
+                alt="Appertizers"
+                class="h-20 w-20 object-cover rounded-full"
+              />
+              <p class="text-sm font-bold">Soups</p>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <section class="mt-20 hidden" id="search-result-page">
+        <div
+          class="text-2xl font-bold text-center mb-4"
+          style="font-family: Verdana, Geneva, Tahoma, sans-serif"
+        >
+          Your Search<span class="text-orange-600"> Result</span>
+        </div>
+        <div
+          class="grid grid-cols-2 justify-center items-center md:grid-cols-3 lg:grid-cols-4 mb-4" id="result-sec"
+        ></div>
+        
+        <div class="flex justify-center items-center my-5">
+          <button class="text-orange-600 mt-2 font-xl hover:text-orange-400 mr-2 text-xl hidden" id="prev-btn"><i class="fa-solid fa-angles-left"></i> Prev</button>
+        <button class="text-orange-600 mt-2 font-xl text-xl hover:text-orange-400 mr-2" id="next-btn">Next <i class="fa-solid fa-angles-right"></i></button>
+        </div>
+      </section>
+
+      <section class="mt-20" id="trendy-page">
+        <div
+          class="text-2xl font-bold text-center mb-4"
+          style="font-family: Verdana, Geneva, Tahoma, sans-serif"
+        >
+          Random <span class="text-orange-600">Recipies</span>
+        </div>
+        <div
+          class="grid grid-cols-2 justify-center items-center md:grid-cols-3 lg:grid-cols-4 mb-4" id="trendy-sec"
+        ></div>
+        
+        <div class="flex justify-center items-center mb-5">
+          <button id="reload-btn" class="hover:text-orange-600 text-black text-xl text-center mt-2">
+            <a href="#trendy-page"> <p>Reload</p></a>
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <div class="h-30 w-full bg-gray-200 mt-20 p-8 relative">
+          <div class="flex flex-col justify-center items-center">
+          <p class="text-lg mb-1">
+            <span class="text-orange-600">Get a Subscription</span> to food's
+            recipe!
+          </p>
+          <p class="px-5 text-center text-xs">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            vero ab vitae enim vel impedit!
+          </p>
+          <div class="flex font-sm mt-4 bg-white rounded-xl">
+            <input
+              type="text"
+              placeholder="Your Email address here"
+              class="p-1 rounded-xl  placeholder:text-sm focus:outline-none"
+            />
+            <button
+              class="rounded-2xl text-sm py-1 px-5 bg-orange-600 text-white hover:bg-orange-500 hover:text-white"
+            >
+              Subscribe
+            </button>
+          </div>
+          <div class="flex mt-3 text-sm">
+            <input type="checkbox" id="agree"/>
+            <label for="agree" class=" ml-3 "></label>
+            By subscribing, I consent to recieving emails.</label>
+          </div>
+          </div>
+        </div>
+      </section>
+
+        <footer class="bg-sky-900 mb-2">
+          <div class="flex flex-col justify-center items-center py-5">
+            <a href="#"><p class="text-orange-600 text-2xl font-bold pt-5 font-mono logo">FOOD</p></a>
+            <p class="px-5 text-xs text-sky-200 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, consequatur.</p>
+            <div class="flex text-orange-600 text-xl my-8">
+              <i class="fa-brands fa-facebook mr-2"></i>
+              <i class="fa-brands fa-twitter mr-2"></i>
+              <i class="fa-brands fa-instagram mr-2"></i>
+              <i class="fa-brands fa-linkedin mr-2"></i>
+            </div>
+            <div class="text-sky-200 text-sm mt-4">
+              <a href="#" class="mr-5 hover:text-orange-600">Recipies</a>
+              <a href="#" class="mr-5 hover:text-orange-600">Learn/How-to</a>
+              <a href="#" class="mr-5 hover:text-orange-600">Seasonal Sensations</a>
+              <a href="#" class=" hover:text-orange-600">Shop</a>
+            </div>
+            </div>
+            <div class="flex justify-between items-center text-xs text-sky-200 mt-6 px-3 md:px-6">
+              <p> &#169;copyright</a></p>
+              <div class="flex gap-2">
+                <p class=" hover:text-orange-600"><a href="#">Terms and Condition</a></p>
+                <p class="hover:text-orange-600"><a href="#">Privacy Policy</a></p>
+              </div>
+          </div>
+          <div>
+
+          </div>
+        </footer>
+    </div>
+
+    <!--recipe popup-->
+    <section class="modal hidden" id="result-popup">
+     <div class="result bg-gray-300 flex flex-col justify-center items-center" id="recipe-result">
+        <img class="result-img mt-3 object-cover" src="" alt="recipe image" id="result-image">
+        <i
+          class="fa-solid fa-xmark absolute top-3 left-6 text-gray-400 text-4xl"
+        id="close-modal"></i>
+        <h1 class="text-xl my-2 text-orange-600 font-bold text-center" id="result-title"></h1>
+        <p class="text-center text-sm text-gray-700 mb-2" id="ingredients"></p>
+        <p class="text-center text-sm text-gray-700 mb-2" id="instruction"></p>
+        <button class="px-4 bg-orange-600 text-white hover:bg-orange-500 rounded-lg"><a href="" target="_blank" id="go-to-source">Go To Recipe</a></button>
+      </div>
+      </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
