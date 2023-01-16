@@ -116,7 +116,7 @@ const getSearchResult = (a,b) => {
         class="rounded-full object-cover mt-8 trendy-img"
       />
     </div>
-    <p class="mb-3 text-xl text-center font-bold">${result.title}</p>
+    <p class="mb-3 text-lg text-center font-bold">${result.title}</p>
     <button class=" text-orange-600 mt-2 font-sm hover:text-orange-400" id="detail-btn">Show Detail</button>
     <p class="text-sm px-2 hidden" id="summary">${result.summary}</p>
     <button class=" text-orange-600 mt-2 font-sm hover:text-orange-400 hidden" id="close-detail-button">Close Detail</button>
@@ -168,7 +168,7 @@ const getRandomData = (a) => {
         class="rounded-full object-cover h-20 w-20 mt-8 trendy-img"
       />
     </div>
-    <p class="mb-3 text-xl text-center font-bold">${recipe.title}</p>
+    <p class="mb-3 text-lg text-center font-bold">${recipe.title}</p>
     <button class=" text-orange-600 mt-2 font-sm hover:text-orange-400" id="detail-btn">Show Detail</button>
     <p class="text-sm px-2 hidden" id="summary">${recipe.summary}</p>
     <button class=" text-orange-600 mt-2 font-sm hover:text-orange-400 hidden" id="close-detail-button">Close Detail</button>
