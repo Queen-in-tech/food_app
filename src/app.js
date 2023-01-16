@@ -14,7 +14,7 @@ const prevBtn = document.getElementById("prev-btn")
 const nextBtn = document.getElementById("next-btn")
 
 //const key = "64157ccb604f4f0b852cea396943b821"
-const key = "511de10d001d49949024c9f254766ee1"
+//const key = "511de10d001d49949024c9f254766ee1"
 
 // function to reload page on logo click
 const logos = document.querySelectorAll(".logo");
