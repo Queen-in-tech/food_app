@@ -24,7 +24,7 @@ const reload = () => {
 }
 
 logos.forEach(logo =>{
-  logo.addEventListener("click", reload)
+  logo.addEventListener("click", reload);
 })
 //search recipe function
 
